@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Newborn Registration Form</title> 
+</head>
+<body>
+    <h1>Newborn Registration</h1>
+    <form id="registration-form">
+        <label for="full-name">Full Name of the Newborn:</label>
+        <input type="text" id="full-name" name="full-name" required>
+        <br>
+
+        <label for="birth-date">Date of Birth:</label>
+        <input type="date" id="birth-date" name="birth-date" required>
+        <br>
+
+        <label for="birth-place">Place of Birth:</label>
+        <input type="text" id="birth-place" name="birth-place" required>
+        <br>
+
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female" required>
+        <label for="female">Female</label>
+        <br>
+
+        <label for="birth-time">Time of Birth:</label>
+        <input type="time" id="birth-time" name="birth-time" required>
+        <br>
+
+        <h2>Parent 1</h2>
+        <label for="parent1-full-name">Full Name:</label>
+        <input type="text" id="parent1-full-name" name="parent1-full-name" required>
+        <br>
+
+        <label for="parent1-id">Identification Number:</label>
+        <input type="text" id="parent1-id" name="parent1-id">
+        <br>
+
+        <label for="parents1-residence">Parents' Residence:</label>
+        <input type="text" id="parents1-residence" name="parents1-residence" required>
+        <br>
+
+        <h2>Parent 2</h2>
+        <label for="parent2-full-name">Full Name:</label>
+        <input type="text" id="parent2-full-name" name="parent2-full-name">
+        <br>
+
+        <label for="parent2-id">Identification Number:</label>
+        <input type="text" id="parent2-id" name="parent2-id">
+        <br>
+
+        <label for="parents2-residence">Parents' Residence:</label>
+        <input type="text" id="parents2-residence" name="parents2-residence" required>
+        <br>
+
+        <label for="parents-marital-status">Parent's Marital Status:</label>
+        <select id="parents-marital-status" name="parents-marital-status">
+            <option value="married">Married</option>
+            <option value="single">Single</option>
+            <option value="divorced">Divorced</option>
+            <!-- Add more options as needed -->
+        </select>
+        <br>
+
+        <label for="witnesses">Witnesses:</label>
+        <input type="text" id="witnesses" name="witnesses">
+        <br>
+
+        <button type="submit">Register</button>
+    </form>
+
+    <div id="error-messages"></div> <!-- Container for error messages -->
+
+    <!-- Include the external JavaScript file -->
+    <script src="js/form-validation.js"></script>
+</body>
+</html>
